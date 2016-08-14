@@ -6,14 +6,32 @@ namespace SimpleBlog.Models
 {
     public class User
     {
+        private const int WorkFactor = 13;
+
+        //Avoid timing attacks hashing a blank password when user/password submitted are incorrect
+        public static void FakeHash()
+        {
+            BCrypt.Net.BCrypt.HashPassword(string.Empty, WorkFactor);
+        }
+
         public virtual int Id { get; set; }
         public virtual string Username { get; set; }
         public virtual string Email { get; set; }
         public virtual string PasswordHash { get; set; }
 
+        //Bcrypt:
+        //- Slow hashing.
+        //- Inmune to GPUs.
+        //- Future proof.
+        //- Salt built in.
         public virtual void SetPassword(string password)
         {
-            PasswordHash = "IGNORE ME";
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(password, WorkFactor);
+        }
+
+        public virtual bool CheckPassword(string password)
+        {
+            return BCrypt.Net.BCrypt.Verify(password, PasswordHash);
         }
     }
 
