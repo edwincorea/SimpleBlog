@@ -17,9 +17,7 @@ namespace SimpleBlog.Models
 
             Id(x => x.Id, x => x.Generator(Generators.Identity));
 
-            Property(x => x.Name, x => x.NotNullable(true));
-
-            
+            Property(x => x.Name, x => x.NotNullable(true));            
         }
     }
 }
