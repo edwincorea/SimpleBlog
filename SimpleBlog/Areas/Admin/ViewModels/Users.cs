@@ -4,6 +4,13 @@ using SimpleBlog.Models;
 
 namespace SimpleBlog.Areas.Admin.ViewModels
 {
+    public class RoleCheckbox
+    {
+        public int Id { get; set; }
+        public bool IsChecked { get; set; }
+        public string Name { get; set; }
+    }
+
     //convention for naming VM: ControllerAction
     public class UsersIndex
     {
@@ -18,6 +25,8 @@ namespace SimpleBlog.Areas.Admin.ViewModels
         public string Password { get; set; }
         [Required, MaxLength(256), DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
+        public IList<RoleCheckbox> Roles { get; set; }
     }
 
     public class UsersEdit
@@ -26,6 +35,8 @@ namespace SimpleBlog.Areas.Admin.ViewModels
         public string Username { get; set; }
         [Required, MaxLength(256), DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+
+        public IList<RoleCheckbox> Roles { get; set; }
     }
 
     public class UsersResetPassword

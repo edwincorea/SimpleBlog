@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
 
@@ -18,6 +18,13 @@ namespace SimpleBlog.Models
         public virtual string Username { get; set; }
         public virtual string Email { get; set; }
         public virtual string PasswordHash { get; set; }
+
+        public virtual IList<Role> Roles { get; set; }
+
+        public User()
+        {
+            Roles = new List<Role>();
+        }
 
         //Bcrypt:
         //- Slow hashing.
@@ -50,6 +57,13 @@ namespace SimpleBlog.Models
                 x.Column("password_hash"); //override name of the column
                 x.NotNullable(true);
             });
+
+            //In Hibernate, a bag is a collection. Hibernate has bags, sets and lists.
+            Bag(x => x.Roles, x => 
+            {
+                x.Table("role_users");
+                x.Key(k => k.Column("user_id"));
+            }, x => x.ManyToMany(k => k.Column("role_id")));
         }
     }
 }
