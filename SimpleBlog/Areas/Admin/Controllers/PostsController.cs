@@ -15,13 +15,13 @@ namespace SimpleBlog.Areas.Admin.Controllers
     [SelectedTab("posts")]
     public class PostsController: Controller
     {
-        private const int PostsPerPage = 5;
+        private const int PostsPerPage = 10;
         public ActionResult Index(int page = 1)
         {
-            int totalPostCount = Database.Session.Query<Post>().Count();
-
             var baseQuery = Database.Session.Query<Post>()
                 .OrderByDescending(c => c.CreatedAt);
+
+            int totalPostCount = baseQuery.Count();
 
             var postIds = baseQuery
                 .Skip((page - 1) * PostsPerPage)
