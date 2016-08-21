@@ -22,8 +22,10 @@ namespace SimpleBlog
 
             routes.MapRoute("Logout", "logout", new { controller = "Auth", action = "Logout", namespaces });
 
+            //Routes order is important: both Home and Sidebar have empty Url. Home is called because is declared first.
             routes.MapRoute("Home", "", new { controller = "Posts", action = "Index"}, namespaces);
 
+            routes.MapRoute("Sidebar", "", new { controller = "Layout", action = "Sidebar" }, namespaces);
         }
     }
 }
