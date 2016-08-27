@@ -413,6 +413,45 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\Microsoft.VC90.CRT\msvcr90.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\Microsoft.VC90.CRT\README_ENU.txt" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\sqlceca40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\sqlcecompact40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\sqlceer40EN.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\sqlceme40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\sqlceqp40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\sqlcese40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FirebirdSql.Data.FirebirdClient.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.MSBuild.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.MSBuild.pdb" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.NAnt.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.NAnt.pdb" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.pdb" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.Runner.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.Runner.pdb" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\FluentMigrator.xml" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Migrate.exe" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Migrate.pdb" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Mono.Security.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\MySql.Data.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Npgsql.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Npgsql.pdb" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Npgsql.XML" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Oracle.DataAccess.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Oracle.ManagedDataAccess.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\policy.2.0.Npgsql.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\System.Data.SQLite.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\System.Data.SqlServerCe.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\System.Data.SqlServerCe.Entity.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\Microsoft.VC90.CRT\msvcr90.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\Microsoft.VC90.CRT\README_ENU.txt" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\sqlceca40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\sqlcecompact40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\sqlceer40EN.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\sqlceme40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\sqlceqp40.dll" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\sqlcese40.dll" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -472,6 +511,11 @@
     <Content Include="Views\Layout\Sidebar.cshtml" />
     <Content Include="Views\Errors\NotFound.cshtml" />
     <Content Include="Views\Errors\Error.cshtml" />
+    <Content Include="Tools\Server\Migrate SimpleBlog.bat" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\Migrate.exe.config" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\policy.2.0.Npgsql.config" />
+    <Content Include="Tools\Server\Software\FluentMigrator-1.6.2\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
